@@ -96,8 +96,7 @@ public class TileManager {
      * and uses it to create the game map.
      * */
     public void loadMap(String mapPath) {
-        try{
-            InputStream is = getClass().getResourceAsStream(mapPath);
+        try(InputStream is = getClass().getResourceAsStream(mapPath);
             assert is != null;
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             for (int i = 0; i < pp.maxWorldXSize; i++) {
@@ -108,8 +107,10 @@ public class TileManager {
                     mapTileNum[j][i] = tileDecode;
                 }
             }
-            br.close();
+            )
+            {
         }catch(Exception ignored){
+            br.close();
             LOGGER.severe("Couldn't find path of the map file!");
         }
     }
