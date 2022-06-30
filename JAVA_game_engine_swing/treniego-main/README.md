@@ -25,10 +25,7 @@ STUDENT NAME: Trenin Egor.
 TEACHERS NAMES: Zidek Jan, Vanke Jan.
 
 UPD 15/04/2022:
-Reworked diagram after more research. It is, however, still not perfect since this is my first time creating one, and it's quite complicated due to all the different relationship between classes.
-The diagram is not 100% accurate to the structure of empty-body classes. That is because when i write diagram first i can forget about something, or when i create the structure in IntelliJ i get a better idea of structurising the classes. 
-*!*Free diagram services do not let me edit or save project so i'm forced to make one entirely from scratch even if i have to change just one small detail. 
-
+Reworked diagram after more research. 
 -----------------------------------------------------------------------------------------------------------------------
 UPD 27/04/2022:
 
